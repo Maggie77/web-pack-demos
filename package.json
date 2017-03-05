@@ -31,5 +31,9 @@
     "webpack": "1.x",
     "webpack-dev-server": "1.x"
   },
-  "repository": "ruanyf/webpack-demos"
+  "repository": "ruanyf/webpack-demos",
+  "scripts": {
+    "dev": "webpack-dev-server --devtool eval --progress --colors",
+    "deploy": "NODE_ENV=production webpack -p"
+  }
 }
